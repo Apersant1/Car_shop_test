@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter Tight", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: inherit;
+}
+.header-left h2 {
+  font-family: "Inter Tight", sans-serif;
+  color: #6c47ff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.header-left h2 i {
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+}
+.catalog-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 36px;
+  background-color: #4f2cd9;
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.catalog-button:hover {
+  background-color: #5a59ff;
+}
+
+.burger-icon {
+  display: grid;
+  grid-template-rows: repeat(3, 2px);
+  grid-gap: 3px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-icon span:nth-child(1) {
+  grid-row: 1;
+}
+
+.burger-icon span:nth-child(2) {
+  grid-row: 2;
+}
+
+.burger-icon span:nth-child(3) {
+  grid-row: 3;
+}
+
+.catalog-button a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: inherit;
+}
+
+.contact-info {
+  display: flex;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.contact-info p:nth-child(1) {
+  margin-right: 20px;
+}
+
+.favorite-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: row;
+  text-decoration: none;
+
+}
+.favorite-button .icon {
+  margin-right: 10px;
+}
+.favorite-button .text{
+  font-size: 22px;
+  color: #000;
+}
